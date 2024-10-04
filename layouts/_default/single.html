@@ -48,6 +48,17 @@
           {{ .Content }}
         </div>
 
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            {{ range .Params.tags }}
+            <div class="post-tags">
+              <a href="/booktown/tags/{{ lower . | urlize }}/">
+                {{ . }}
+              </a>
+            </div>
+            {{ end }}
+          </div>
+        </div>
         
         {{ if in .Site.Params.mainSections .Type }}
           <div class="row">
