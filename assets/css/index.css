@@ -142,12 +142,12 @@ a:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-left: 4px solid rgba(0, 0, 0, 0.2);
   position: relative;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .markdown-body code {
   padding: 0.2em 0.4em;
-  font-size: 90%;
+  font-size: 85%;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -438,6 +438,10 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    margin: 0 8px;
+  }
+
   .header-title,
   .header-subtitle,
   .header-items {
@@ -449,12 +453,12 @@ a:hover {
   }
 
   .markdown-body {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.1px;
   }
   .post-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.3;
   }
   .post-content p {
@@ -463,9 +467,11 @@ a:hover {
     text-indent: 1em;
   }
   article {
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.2rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: none;
+    border: none;
   }
 }
 
@@ -475,12 +481,12 @@ a:hover {
   }
   
   article {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
   }
   
   body {
-    margin: 0 10px;
+    margin: 0 8px;
   }
 }
